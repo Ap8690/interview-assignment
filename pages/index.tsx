@@ -1,7 +1,6 @@
-import type { NextPage } from "next";
-import Li from "../components/li";
-import { AssetType } from "../lib/types";
-import Swap from "../components/swap";
+import Li from '../components/li';
+import { AssetType } from '../lib/types';
+import Swap from '../components/swap';
 
 const Main = ({ assets }: { assets: AssetType[] }) => {
   return (
@@ -13,8 +12,8 @@ const Main = ({ assets }: { assets: AssetType[] }) => {
           </h1>
           <div className="self-stretch flex flex-row items-start justify-center py-[0rem] px-[1.25rem] box-border max-w-full text-[1.25rem]">
             <div className="w-[34.813rem] relative leading-[1.706rem] inline-block shrink-0 max-w-full z-[1] mq450:text-[1rem] mq450:leading-[1.375rem]">
-              Bring blockchain to the people. Solana supports experiences for
-              power users, new consumers, and everyone in between.
+              Bring blockchain to the people. Solana supports experiences for power users, new consumers, and everyone
+              in between.
             </div>
           </div>
         </div>
@@ -69,7 +68,7 @@ const Main = ({ assets }: { assets: AssetType[] }) => {
 };
 
 export async function getServerSideProps() {
-  const response = await fetch("http:localhost:3000/api/assets");
+  const response = await fetch('http:localhost:3000/api/assets');
   const { assets } = await response.json();
   return { props: { assets } };
 }

@@ -1,17 +1,17 @@
 export type AssetType = {
-    name: string,
-    logo: string,
-    lastTradeAmount: Number,
-    changeInADayPercent: Number,
-    changeInADayAmount: Number
-}
+  name: string;
+  logo: string;
+  lastTradeAmount: number;
+  changeInADayPercent: number;
+  changeInADayAmount: number;
+};
 
 export type LiType = {
-    key: number
-    logo: string;
-    name: string;
-    lastTradeAmount: Number,
-    changeInADayPercent: Number,
-    changeInADayAmount: Number
-    className?: string;
+  key: number;
+  logo: string;
+  name: string;
+  lastTradeAmount: number;
+  changeInADayPercent: number;
+  changeInADayAmount: number;
+  className?: string;
 };

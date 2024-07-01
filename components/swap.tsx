@@ -1,15 +1,14 @@
-import type { NextPage } from "next";
-import CurrencyComponent from "./currency.component";
+import type { NextPage } from 'next';
+import CurrencyComponent from './currency.component';
 
 export type ComponentType = {
   className?: string;
 };
 
-const Swap: NextPage<ComponentType> = ({ className = "" }) => {
+const Swap: NextPage<ComponentType> = ({ className = '' }) => {
   return (
     <div
-      className={`mx-auto mt-6 w-full [backdrop-filter:blur(30px)] rounded-3xs bg-gray-300 box-border overflow-hidden flex flex-col items-start justify-start py-[2.375rem] px-[2.437rem] gap-[1.875rem] max-w-full text-left text-[1.25rem] text-zinc-50 font-roboto border-[1px] border-solid border-darkslategray-100 mq450:pt-[2.375rem] mq450:pb-[1.563rem] mq450:box-border ${className}`}
-    >
+      className={`mx-auto mt-6 w-full [backdrop-filter:blur(30px)] rounded-3xs bg-gray-300 box-border overflow-hidden flex flex-col items-start justify-start py-[2.375rem] px-[2.437rem] gap-[1.875rem] max-w-full text-left text-[1.25rem] text-zinc-50 font-roboto border-[1px] border-solid border-darkslategray-100 mq450:pt-[2.375rem] mq450:pb-[1.563rem] mq450:box-border ${className}`}>
       <div className="self-stretch flex flex-row items-start justify-start pt-[0rem] px-[0rem] pb-[1.25rem] box-border max-w-full">
         <div className="flex-1 flex flex-row items-start justify-between max-w-full gap-[1.25rem] mq450:flex-wrap">
           <div className="w-[8.563rem] flex flex-col items-start justify-start pt-[0.281rem] px-[0rem] pb-[0rem] box-border">
@@ -35,11 +34,7 @@ const Swap: NextPage<ComponentType> = ({ className = "" }) => {
               $0.00
             </div>
           </div>
-          <CurrencyComponent
-            logo="/phcurrencybtcbold.svg"
-            asset="BTC"
-            balance="24,240"
-          />
+          <CurrencyComponent logo="/phcurrencybtcbold.svg" asset="BTC" balance="24,240" />
         </div>
         <div className="flex-1 rounded-tl-none rounded-tr-lg rounded-br-lg rounded-bl-none bg-gray-200 flex flex-row items-start justify-between py-[1.25rem] px-[3.125rem] box-border relative min-w-[22.313rem] max-w-full gap-[1.25rem] mq450:flex-wrap mq450:pl-[1.25rem] mq450:pr-[1.25rem] mq450:box-border mq750:min-w-full">
           <div className="w-[6.25rem] flex flex-col items-start justify-start gap-[0.25rem]">
@@ -50,12 +45,7 @@ const Swap: NextPage<ComponentType> = ({ className = "" }) => {
               $0.00
             </div>
           </div>
-          <CurrencyComponent
-            logo="/mingcutebnbline.svg"
-            asset="BNB"
-            balance="63,790"
-            propWidth="7.75rem"
-          />
+          <CurrencyComponent logo="/mingcutebnbline.svg" asset="BNB" balance="63,790" propWidth="7.75rem" />
           <img
             className="h-[3.125rem] w-[3.125rem] absolute !m-[0] top-[2.125rem] left-[-1.562rem] rounded-6xl overflow-hidden shrink-0 z-[1]"
             loading="lazy"
@@ -82,9 +72,7 @@ const Swap: NextPage<ComponentType> = ({ className = "" }) => {
             </div>
           </div>
           <div className="w-[5.313rem] flex flex-col items-start justify-start pt-[0.625rem] px-[0rem] pb-[0rem] box-border text-dimgray">
-            <div className="self-stretch relative overflow-hidden text-ellipsis whitespace-nowrap">
-              Updates in 4s
-            </div>
+            <div className="self-stretch relative overflow-hidden text-ellipsis whitespace-nowrap">Updates in 4s</div>
           </div>
         </div>
       </div>

@@ -1,4 +1,6 @@
-export default function Layout({ children }: { children: any }) {
+import { ReactNode } from 'react';
+
+export default function Layout({ children }: { children: ReactNode }) {
   return (
     <div className="w-full relative bg-black overflow-hidden flex flex-col items-end justify-start pt-[1.062rem] px-[8.125rem] mq1225:px-8 pb-[13.812rem] box-border gap-[6.687rem] leading-[normal] tracking-[normal] mq450:gap-[1.688rem] mq450:box-border mq750:gap-[3.313rem] mq750:box-border">
       <div className="w-full h-[52.438rem] absolute !m-[0] top-[0rem] right-[0rem] left-[0rem]">
@@ -9,18 +11,11 @@ export default function Layout({ children }: { children: any }) {
         />
       </div>
       <header className="w-full flex flex-row items-start justify-between gap-[1.25rem] max-w-full mq750:w-full">
-        <img
-          className="w-[12.063rem] h-[1.563rem] z-[1]"
-          loading="lazy"
-          alt=""
-          src="/frame-9.svg"
-        />
+        <img className="w-[12.063rem] h-[1.563rem] z-[1]" loading="lazy" alt="" src="/frame-9.svg" />
 
         <nav className="m-0 w-[27.75rem] flex flex-row items-center justify-between pt-[0.625rem] px-[0rem] pb-[0rem] box-border max-w-full mq750:hidden">
           <nav className="m-0 self-stretch flex flex-row items-center justify-between text-left text-[0.875rem] text-white font-roboto gap-6">
-            <a className="[text-decoration:none] relative font-medium text-[inherit] inline-block z-[1]">
-              Exchage
-            </a>
+            <a className="[text-decoration:none] relative font-medium text-[inherit] inline-block z-[1]">Exchage</a>
             <a className="[text-decoration:none] relative font-medium text-[inherit] inline-block whitespace-nowrap z-[1]">
               Last Transactions
             </a>
