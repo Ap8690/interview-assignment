@@ -68,7 +68,7 @@ const Main = ({ assets }: { assets: AssetType[] }) => {
 };
 
 export async function getServerSideProps() {
-  const response = await fetch('http:localhost:3000/api/assets');
+  const response = await fetch(process.env.NEXT_APP_SERVER_URL + '/api/assets');
   const { assets } = await response.json();
   return { props: { assets } };
 }
